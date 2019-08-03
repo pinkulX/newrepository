@@ -1,0 +1,27 @@
+<p>
+  list-user works!
+</p>
+<div class="container">
+  <table class="table table-striped" >
+    <thead>
+        <tr>
+          <th>id</th>
+          <th>firstname</th>
+          <th>lastname</th>
+          <th>email</th>
+          <th>password</th>
+        </tr>
+    </thead>
+    <tbody>
+      <div>
+      <tr *ngFor="let user of userList">
+        <td>{{ user.id }}</td>
+        <td>{{ user.firstname }}</td>
+        <td>{{ user.lastname }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.password }}</td>
+      </tr>
+    </div>
+    </tbody>
+  </table>
+</div>
